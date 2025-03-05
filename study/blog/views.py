@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def blog1(request):
-    return HttpResponse("Add a new blog File! ")
+    return render(request,'blog/blog.html')

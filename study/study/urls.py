@@ -27,8 +27,8 @@ from depplearning.views import deep_lear'''
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('learning.urls')),
-    path('into/',include('depplearning.urls')),
-    path('about/',include('DataAnalaze.urls')),
-    path('blogs/',include('blog.urls')),
-    path('Ab/',include('About_usa.urls')),
+    path('deep/',include('depplearning.urls')),
+    path('data/',include('DataAnalaze.urls')),
+    path('blog/',include('blog.urls')),
+    path('about/',include('About_usa.urls')),
 ]
