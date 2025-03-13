@@ -26,7 +26,7 @@ from DataAnalaze.views import  Data
 from depplearning.views import deep_lear'''
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('learning.urls')),
+    path('main/',include('learning.urls')),
     path('deep/',include('depplearning.urls')),
     path('data/',include('DataAnalaze.urls')),
     path('blog/',include('blog.urls')),
