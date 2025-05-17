@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def blog1(request):
-    return render(request,'blog/blog.html')
+    return render(request,'normal/blog/blog.html')

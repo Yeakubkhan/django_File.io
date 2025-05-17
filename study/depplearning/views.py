@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def deep_lear(request):
-    return render(request,'depp/depp.html')
+    return render(request,'normal/depp/depp.html')

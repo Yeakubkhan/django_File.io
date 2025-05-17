@@ -8,9 +8,9 @@ def machine(request):
     time = " tow Hours"
     sediul = "10:30 am to 11:00 pm"
     offer={'ln':learn,'t': time, 's': sediul ,'what': 'Bacend website development!'}
-    return render(request,'learning/learning.html',context=offer)
+    return render(request,'normal/learning/learning.html',context=offer)
 
 def machine_1(request):
     ln = 'Study'
     side = {'l':ln,'lr': ["Yeakub","Parvez","Shihab"]}
-    return render(request,'learning/index.html',context=side)
+    return render(request,'normal/learning/index.html',context=side)

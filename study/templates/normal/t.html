@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="{% static 't.css' %}">
+</head>
+<body>
+    <h1>{{ thr }}</h1>
+    {% if thr %}
+    <Table>
+        <tr>
+            <th>ID</th>
+            <th>TID</th>
+            <th>TNAME</th>
+            <th>TEMAIL</th>
+        </tr>
+        {% for th in thr %}
+        <tr>
+            <td>{{th.id}}</td>
+            <td>{{th.tid}}</td>
+            <td>{{th.tname}}</td>
+            <td>{{th.temail}}</td>
+        </tr>
+        {% endfor %}
+    </Table>
+    
+    {% endif %}
+</body>
+</html>
